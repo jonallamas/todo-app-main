@@ -10,7 +10,9 @@ export default function Card({ children }){
             .card{
                 background-color: var(--light-very-light-gray);
                 border-radius: 4px;
-                display: flex
+                display: flex;
+                flex-direction: column;
+                box-shadow: 0 18px 40px 0px rgba(0,0,0,.1)
             }    
         `}</style>
         </>

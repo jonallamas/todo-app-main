@@ -21,6 +21,11 @@
   --dark-very-dark-grayish-lue: hsl(237, 14%, 26%);
 }
 
+*{
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
+  outline: none
+}
 
 html,
 body {
@@ -28,9 +33,8 @@ body {
   margin: 0;
   /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, */
     /* Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
-  font-family: "Josefin Sans", sans-serif;
   font-size: 18px;
-  background-color: var(--light-very-light-grayish-blue)
+  background-color: var(--light-very-light-gray)
 }
 
 a {
@@ -38,6 +42,8 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0
 }

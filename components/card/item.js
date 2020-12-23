@@ -1,36 +1,65 @@
-
-export default function Add({ children }){
+export default function Item(props){
     return(
         <>
-        <form>
+        <div className="item">
             <div className="radio">
                 <label className="contCheck">
                     <input type="checkbox" />
                     <span className="checkmark"></span>
                 </label>
             </div>
-            <input type="text" className="addTodo" placeholder="Ingrese un texto" />
-        </form>
+            <span className="text">{ props.text }</span>
+            <button className="icon">
+                <i className="iconDelete" />
+            </button>
+        </div>
         <style jsx>{`
-            form{
+            .item{
+                border-bottom: 1px solid var(--light-very-light-grayish-blue);
+                padding: 1rem 1.2rem 1rem 0;
                 display: flex;
-                width: 100%;
-                /* background-color: var(--light-very-light-gray) */
+                width: 100%
             }
-            input{
-                font-family: "Josefin Sans", sans-serif;
-                font-size: 18px
+            .item:last-child{
+                border-bottom: 0
+            }
+            .text{
+                width: 100%;
+                border: none;
+                background-color: transparent;
+            }    
+            .icon{
+                display: flex;
+                flex-basis: 2rem;
+                border: none;
+                background-color: transparent;
+                
+                /* padding: 1rem; */
+                justify-content: center;
+                align-items: flex-start;
+                cursor: pointer;
+                padding-right: 0;
+                opacity: 0
+            }
+            .item:hover .icon{
+                opacity: 1
+            }
+            .iconDelete{
+                width: .8rem;
+                height: .8rem;
+                background-size: cover;
+                background-image: url('/icon-cross.svg');
             }
             .radio{
                 flex-basis: 4rem;
                 display: flex;
-                align-items: center;
+                align-items: flex-start;
                 justify-content: center;
                 /* background-color: var(--light-very-light-gray) */
             }
             .contCheck{
-                height: 1.2rem;
-                width: 1.2rem;
+                height: 22px;
+                width: 22px;
                 cursor: pointer;
                 position: relative;
                 display: block;
@@ -50,8 +79,8 @@ export default function Add({ children }){
                 position: absolute;
                 top: 0;
                 left: 0;
-                height: 1.2rem;
-                width: 1.2rem;
+                height: 22px;
+                width: 22px;
                 background-color: var(--light-very-light-gray);
                 border: 1px solid var(--light-light-grayish-blue);
                 border-radius: 50%;
@@ -86,14 +115,6 @@ export default function Add({ children }){
             .contCheck .checkmark:after{
                 margin: 0 auto;
                 background-image: url('/icon-check.svg')
-            }
-
-            .addTodo{
-                width: 100%;
-                border: none;
-                padding: 1rem 1.5rem 1rem .5rem;
-                background-color: transparent;
-                outline: none
             }
         `}</style>
         </>

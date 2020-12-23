@@ -26,7 +26,8 @@ export default function Nav(){
                 background-color: transparent;
                 outline: none;
                 background-size: cover;
-                border: none
+                border: none;
+                cursor: pointer
             }
             .iconSun{
                 background-image: url('/icon-sun.svg');
