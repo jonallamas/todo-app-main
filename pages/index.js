@@ -27,11 +27,11 @@ export default function Home() {
                         <div className="cardBody">
                             <ul className="todoList">
                                 <li className="todo">
-                                    <Item text="Esto es un texto hijos" />
-                                    <Item text="Esto es un texto hijos de una grandísima" />
-                                    <Item text="Esto es un texto hijos de una grandísima puta" />
-                                    <Item text="Esto es un texto hijos de una grandísima puta que los parió" />
-                                    <Item text="Esto es un texto hijos de una grandísima puta que los parió a todos ustedes, inservibles" />
+                                    <Item text="Lorem ipsum dolor sit amet" />
+                                    <Item text="Lorem ipsum dolor sit amet, consectetur adipiscing" />
+                                    <Item text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do " />
+                                    <Item text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor " />
+                                    <Item text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore" />
                                 </li>
                             </ul>
                         </div>
